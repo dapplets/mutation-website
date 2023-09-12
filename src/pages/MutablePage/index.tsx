@@ -26,9 +26,10 @@ const MutablePage: FC<MutablePageProps> = () => {
       </h1>
       <div className={styles.descriptionBlock}>
         <div className={styles.descriptionBlockTop}>
-          Forwarding to <span className={styles.variable}>{targetUrl}</span>
+          Forwarding to <span className={styles.variable}>{targetUrl}</span> as{' '}
+          <span className={styles.variable}>{mutation}</span> version
           <br />
-          Version <span className={styles.variable}>{mutation}@{author}</span>
+          maintained by <span className={styles.variable}>{author}</span>
         </div>
         <div className={styles.descriptionBlockBottom}>
           You need to install an extension to watch it.
@@ -37,7 +38,7 @@ const MutablePage: FC<MutablePageProps> = () => {
       <div className={styles.buttonBlock}>
         <a
           href="https://chrome.google.com/webstore/detail/dapplets-development-buil/oldijfflfojekjlmkjclmjmnpdinieaa"
-          target='_blank'
+          target="_blank"
           className={styles.buttonDownload}
         >
           <img src={Download} />
