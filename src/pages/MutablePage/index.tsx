@@ -5,9 +5,7 @@ import Download from '../../assets/images/icons/download.svg'
 
 export type MutablePageProps = {}
 
-const MutablePage: FC<MutablePageProps> = ({}) => {
-  const [isDarkMode, setIsDarkMode] = useState(false)
-
+const MutablePage: FC<MutablePageProps> = () => {
   return (
     <div className={styles.root}>
       <h1 className={styles.mainTitle}>
