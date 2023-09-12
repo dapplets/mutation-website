@@ -1,0 +1,72 @@
+@import '../../assets//styles/color.variables.scss';
+@import '../../assets//styles/fonts.scss';
+@import '../../assets//styles/null.scss';
+
+.root {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    justify-content: center;
+}
+
+.mainTitle {
+    display: flex;
+    flex-direction: column;
+    font-family: SegoeUIBold, sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+
+}
+
+.mainTitleLabel {
+    color: $colors-accent;
+    text-shadow: 0px 0px 0px rgba(255, 64, 0, 0.10), 0px 3px 7px rgba(255, 64, 0, 0.10), 0px 13px 13px rgba(255, 64, 0, 0.09), 0px 30px 18px rgba(255, 64, 0, 0.05), 0px 54px 21px rgba(255, 64, 0, 0.01), 0px 84px 23px rgba(255, 64, 0, 0.00);
+
+}
+
+.descriptionBlock {
+    display: flex;
+    flex-direction: column;
+    font-family: SegoeUIRegular, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 149%;
+}
+
+.descriptionBlockTop {
+    padding: 40px 0;
+
+}
+
+.descriptionBlockBottom {}
+
+.buttonBlock {
+    padding-top: 80px;
+}
+
+.buttonDownload {
+    background: $colors-accent;
+    display: flex;
+    width: 295px;
+    height: 52px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    font-family: SegoeUIRegular, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 149%;
+    color: $pure-white;
+    border-radius: 6px;
+    img{
+        margin-right: 10px;
+    }
+    &:hover{
+        background: $primary-hover;
+    }
+}
+@import './adaptive.scss'
