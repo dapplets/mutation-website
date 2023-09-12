@@ -1,7 +1,5 @@
-import { FC, useState } from 'react'
-
+import { FC } from 'react'
 import styles from './Layout.module.scss'
-import MutablePage from '../../pages/MutablePage'
 import heart from '../../assets/images/icons/heart.svg'
 import git from '../../assets/images/icons/git.svg'
 import discord from '../../assets/images/icons/discord.svg'
@@ -10,15 +8,16 @@ import medium from '../../assets/images/icons/medium.svg'
 import twitter from '../../assets/images/icons/twitter.svg'
 import fb from '../../assets/images/icons/facebook.svg'
 import mail from '../../assets/images/icons/mail.svg'
-// import { Link as RouterLink } from "react-router-dom";
 
-export type LayoutProps = {}
+export type LayoutProps = {
+  children: React.ReactNode
+}
 
-const Layout: FC<LayoutProps> = () => {
+const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <div className={styles.layout}>
       <div className={styles.container}>
-        <MutablePage />
+        {children}
 
         <div className={styles.footer}>
           <div className={styles.footerText}>
