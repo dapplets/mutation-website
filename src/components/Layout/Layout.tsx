@@ -66,8 +66,8 @@ const Layout: FC<LayoutProps> = ({ children }) => {
               <a className={styles.footerItem}  href="https://twitter.com/dapplets_org" target="_blank" rel="noopener noreferrer">
                 <img src={twitter} />
               </a>
-              {/* todo: need fb */}
-              <a className={styles.footerItem}  href="http://" target="_blank" rel="noopener noreferrer">
+          
+              <a className={styles.footerItem}  href="https://www.facebook.com/dapplets" target="_blank" rel="noopener noreferrer">
                 <img src={fb} />
               </a>
               <a className={styles.footerItem}  href="mailto:contact@dapplets.org" target="_blank" rel="noopener noreferrer">

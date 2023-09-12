@@ -1,5 +1,3 @@
-/src/contentscript/global.js
-/src/contentscript/dynamicAdapter/custom-elements.min.js
 *.scss
 *.css
 node_modules
