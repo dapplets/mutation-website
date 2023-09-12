@@ -21,11 +21,11 @@ const MutablePage: FC<MutablePageProps> = () => {
       </div>
       <div className={styles.buttonBlock}>
         <a
-          href="https://chrome.google.com/webstore/detail/dapplets/pjjnaojpjhgbhpfffnjleidmdbajagdj"
+          href="https://chrome.google.com/webstore/detail/dapplets-development-buil/oldijfflfojekjlmkjclmjmnpdinieaa"
           className={styles.buttonDownload}
         >
           <img src={Download} />
-          Get our Extension
+          Get Extension
         </a>
       </div>
     </div>
