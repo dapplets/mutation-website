@@ -29,6 +29,13 @@
 .descriptionBlock {
     display: flex;
     flex-direction: column;
+   
+}
+
+.descriptionBlockTop {
+
+    padding: 40px 0;
+    padding-bottom: 80px;
     font-family: SegoeUIRegular, sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -36,13 +43,13 @@
     line-height: 149%;
 }
 
-.descriptionBlockTop {
-    padding: 40px 0;
-    padding-bottom: 80px;
-
+.descriptionBlockBottom {
+    font-family: SegoeUIRegular, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 149%;
 }
-
-.descriptionBlockBottom {}
 
 .buttonBlock {
     padding-top: 20px;
