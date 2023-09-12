@@ -18,19 +18,21 @@ const MutablePage: FC<MutablePageProps> = () => {
 
   return (
     <div className={styles.root}>
-        <div className={styles.descriptionBlockTop}>
+      <div className={styles.descriptionBlockTop}>
         Disclaimer: Mutable Web is a research project and an experimental technology.
-        </div>
+      </div>
       <h1 className={styles.mainTitle}>
         You’re entering <span className={styles.mainTitleLabel}>Mutable Web</span>
       </h1>
       <div className={styles.descriptionBlock}>
         <div className={styles.descriptionBlockTop}>
-          Opening the {mutation} version of the {targetUrl}<br/>
-          maintained by {author}.
+          Opening the <span className={styles.variable}>{mutation}</span> version of the{' '}
+          <span className={styles.variable}>{targetUrl}</span>
+          <br />
+          maintained by <span className={styles.variable}>{author}</span>.
         </div>
         <div className={styles.descriptionBlockBottom}>
-        You need to install an extension to watch it.
+          You need to install an extension to watch it.
         </div>
       </div>
       <div className={styles.buttonBlock}>
