@@ -1,0 +1,85 @@
+@import '../../assets//styles/color.variables.scss';
+@import '../../assets//styles/fonts.scss';
+@import '../../assets//styles/null.scss';
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+
+    background: $web-bg;
+    color: $pure-white;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1310px;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.footer {
+    margin: 0 auto;
+    margin-top: auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+
+}
+
+.footerText {
+    // width: 50%;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+
+    img {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.footerLinks {
+    // width: 50%;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+
+    a {
+        display: inline-block;
+        margin-left: 20px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}
+
+.footerTextCopiright {
+    font-family: SegoeUIRegular, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.footerTextLink {
+    font-family: SegoeUIRegular, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    text-decoration: underline;
+    color: $pure-white;
+    display: inline-block;
+    margin-left: 3px;
+}
