@@ -14,6 +14,7 @@ export type LayoutProps = {
 }
 
 const Layout: FC<LayoutProps> = ({ children }) => {
+  
   return (
     <div className={styles.layout}>
       <div className={styles.container}>
