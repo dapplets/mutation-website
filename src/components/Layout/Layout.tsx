@@ -12,13 +12,9 @@ import fb from '../../assets/images/icons/facebook.svg'
 import mail from '../../assets/images/icons/mail.svg'
 // import { Link as RouterLink } from "react-router-dom";
 
-export type LayoutProps = {
-  children: React.ReactNode
-}
+export type LayoutProps = {}
 
-const Layout: FC<LayoutProps> = ({ children }) => {
-  const [isDarkMode, setIsDarkMode] = useState(false)
-
+const Layout: FC<LayoutProps> = () => {
   return (
     <div className={styles.layout}>
       <div className={styles.container}>
