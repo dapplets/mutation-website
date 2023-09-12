@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from 'react'
+import { FC } from 'react'
 import styles from './MutablePage.module.scss'
 import Download from '../../assets/images/icons/download.svg'
 import { useSearchParams } from 'react-router-dom'
