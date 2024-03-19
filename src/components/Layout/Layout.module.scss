@@ -8,7 +8,10 @@
     width: 100vw;
     height: 100vh;
 
-    background: $web-bg;
+    background:  radial-gradient(ellipse at 60% 50%, rgba(0, 148, 255, 0.1) 1% 1%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0) 50%),
+    radial-gradient(ellipse at 120% 50%, #8bb5ff 10% 10%, transparent 70%, transparent 70%),
+    radial-gradient(ellipse at 198px 250px, #6bc4d8 10% 10%, transparent 70%, transparent 30%),
+    radial-gradient(ellipse at 50% 60%, #ff90ea, transparent, transparent);
     color: $content-color;
     position: relative;
    
