@@ -1,3 +1,12 @@
-@media  (max-width: 1050px) {
-
+@media  (max-width: 900px) {
+    .root{
+        width: auto;
+        // max-height:max-content;
+        padding: 40px;
+        gap: 20px;
+    }
+    .mainTitle{
+        font-size: 32px;
+    }
+  
 }
