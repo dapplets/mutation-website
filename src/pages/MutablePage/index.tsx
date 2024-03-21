@@ -1,7 +1,8 @@
 import { FC } from 'react'
 import styles from './MutablePage.module.scss'
 import Download from '../../assets/images/icons/download.svg'
-import { useSearchParams } from 'react-router-dom'
+import { Link, useSearchParams } from 'react-router-dom'
+import alert from '../../assets/images/icons/alert.svg'
 export type MutablePageProps = {}
 
 const MutablePage: FC<MutablePageProps> = () => {
@@ -19,32 +20,38 @@ const MutablePage: FC<MutablePageProps> = () => {
   return (
     <div className={styles.root}>
       <div className={styles.descriptionBlockTop}>
-        Disclaimer: Mutable Web is a research project and an experimental technology.
+        <img src={alert} />
+        Mutable Web is an experimental technology.&nbsp;
+        <Link to={'https://dapplets.org/'}>Read more.</Link>
       </div>
-      <h1 className={styles.mainTitle}>
-        You’re entering <span className={styles.mainTitleLabel}>Mutable Web</span>
-      </h1>
-      <div className={styles.descriptionBlock}>
-        <div className={styles.descriptionBlockTop}>
-          Forwarding to <span className={styles.variable}>{targetUrl}</span> as{' '}
-          <span className={styles.variable}>{mutation}</span> version
-          <br />
-          maintained by <span className={styles.variable}>{author}</span>
+
+      <h1 className={styles.mainTitle}>You’re entering<br/> Mutable Web</h1>
+
+     
+        <div className={styles.descriptionBlockMedium}>
+          <div className={styles.textMutation}>     Opening the <span className={styles.variable}>{mutation}</span> mutation of the&nbsp;</div>
+     
+          <div className={styles.descriptionBlockTargetUrl}>
+          <Link to={targetUrl} className={styles.variableTargetUrl}>{targetUrl}</Link>
+          </div>
+          <div className={styles.textMutation}> 
+          Opening the by <span className={styles.variable}>{author}</span></div>
         </div>
-        <div className={styles.descriptionBlockBottom}>
-          You need to install an extension to watch it.
-        </div>
-      </div>
+      
       <div className={styles.buttonBlock}>
         <a
-          href="https://chrome.google.com/webstore/detail/dapplets-development-buil/oldijfflfojekjlmkjclmjmnpdinieaa"
+          href="https://chromewebstore.google.com/detail/mutable-web/cnahdmdbhkphpbpbjjbfdnmbphbenglc"
           target="_blank"
           className={styles.buttonDownload}
         >
           <img src={Download} />
-          Get Extension
+          Get our Extension
         </a>
+        <div className={styles.descriptionBlockBottom}>
+        You need to install an extension to watch it.
       </div>
+      </div>
+     
     </div>
   )
 }

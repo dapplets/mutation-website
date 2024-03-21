@@ -3,93 +3,113 @@
 @import '../../assets//styles/null.scss';
 
 .layout {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100%;
+  overflow-y: auto;
 
-    background: $web-bg;
-    color: $content-color;
-    position: relative;
-   
+  background: radial-gradient(
+        circle at 75% 70%,
+        rgba(0, 148, 255, 0.3) 0.5% 0.5%,
+        rgba(255, 255, 255, 0) 15%,
+        rgba(255, 255, 255, 0) 15%
+      )
+      no-repeat,
+    radial-gradient(circle at 100% 90%, #8bb5ff 2% 2%, transparent 35%, transparent 35%) no-repeat,
+    radial-gradient(ellipse 90% 250% at 30% 50%, #6bc4d8 10% 10%, transparent 40%, transparent 30%)
+      no-repeat,
+    radial-gradient(
+        ellipse 20% 60% at 60% 70%,
+        rgb(255, 144, 234) 0%,
+        rgb(255, 255, 255) 96%,
+        rgb(255, 255, 255) 27%
+      )
+      no-repeat;
+
+  color: $content-color;
+  position: relative;
 }
-.stylesDelimeter{
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    left: 0;
-    bottom: 100px;
-    background: $delimeter;
+.stylesDelimeter {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: 100px;
+  background: $delimeter;
 }
 .container {
-    margin: 0 auto;
-    width: 1310px;
-    flex: 1 1 auto;
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
+  margin: 0 auto;
+  width: 1310px;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
 }
 
 .footer {
-    margin: 0 auto;
-    margin-top: auto;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    height: 80px;
-    align-items: center;
+  margin: 0 auto;
+  margin-top: auto;
+  display: flex;
+  width: 100%;
 
+  height: 60px;
+  align-items: center;
 }
 
 .footerText {
-    // width: 50%;
-    flex: 1 1 auto;
-    display: flex;
-    align-items: center;
-
-    img {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
+  // width: 50%;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-top: 20px;
+  img {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 .footerLinks {
-    // width: 50%;
-    flex: 1 1 auto;
-    display: flex;
-    align-items: center;
+  // width: 50%;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
 
-    a {
-        display: inline-block;
-        margin-left: 20px;
+  a {
+    display: inline-block;
+    margin-left: 20px;
 
-        &:first-child {
-            margin-left: 0;
-        }
-
-        &:hover {
-            opacity: 0.5;
-        }
+    &:first-child {
+      margin-left: 0;
     }
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
 }
 
 .footerTextCopiright {
-    font-family: SegoeUIRegular, sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 100%;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
 }
 
 .footerTextLink {
-    font-family: SegoeUIRegular, sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 100%;
-    text-decoration: underline;
-    color: $content-color;
-    display: inline-block;
-    margin-left: 3px;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  text-decoration: underline;
+  color: $content-color;
+  display: inline-block;
+  margin-left: 3px;
 }
-@import './adaptive.scss'
+@import './adaptive.scss';
