@@ -99,7 +99,6 @@ justify-content: center;
   font-weight: 400;
   line-height: 149%;
   color: #222222;
-  text-decoration: underline;
 }
 
 .descriptionBlockBottom {
@@ -127,7 +126,7 @@ justify-content: center;
 
   justify-content: center;
   align-items: center;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -143,8 +142,7 @@ justify-content: center;
 }
 
 .variable {
-  color: #384bff;
-  text-decoration: underline;
+  font-weight: 600;
 }
 
 @import './adaptive.scss';

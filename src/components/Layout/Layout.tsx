@@ -16,7 +16,7 @@ const Layout: FC<LayoutProps> = ({ children }) => {
 
         <div className={styles.footer}>
           <div className={styles.footerText}>
-            <span className={styles.footerTextCopiright}>© 2019—2023 &#x20;</span>
+            <span className={styles.footerTextCopiright}>© 2019—2024 &#x20;</span>
             <img src={heart} /> &#x20;
             <span className={styles.footerTextCopiright}>by &#x20; </span>
             <a

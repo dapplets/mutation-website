@@ -22,22 +22,30 @@ const MutablePage: FC<MutablePageProps> = () => {
       <div className={styles.descriptionBlockTop}>
         <img src={alert} />
         Mutable Web is an experimental technology.&nbsp;
-        <Link to={'https://dapplets.org/'}>Read more.</Link>
+        <Link to={'https://dapplets.org/'} target="_blank">
+          Read more.
+        </Link>
       </div>
 
-      <h1 className={styles.mainTitle}>You’re entering<br/> Mutable Web</h1>
+      <h1 className={styles.mainTitle}>
+        You’re entering
+        <br /> Mutable Web
+      </h1>
 
-     
-        <div className={styles.descriptionBlockMedium}>
-          <div className={styles.textMutation}>     Opening the <span className={styles.variable}>{mutation}</span> mutation of the&nbsp;</div>
-     
-          <div className={styles.descriptionBlockTargetUrl}>
-          <Link to={targetUrl} className={styles.variableTargetUrl}>{targetUrl}</Link>
-          </div>
-          <div className={styles.textMutation}> 
-          Opening the by <span className={styles.variable}>{author}</span></div>
+      <div className={styles.descriptionBlockMedium}>
+        <div className={styles.textMutation}>
+          {' '}
+          Opening the <span className={styles.variable}>{mutation}</span> mutation of the&nbsp;
         </div>
-      
+
+        <div className={styles.descriptionBlockTargetUrl}>
+          <div className={styles.variableTargetUrl}>{targetUrl}</div>
+        </div>
+        <div className={styles.textMutation}>
+          maintained by <span className={styles.variable}>{author}</span>
+        </div>
+      </div>
+
       <div className={styles.buttonBlock}>
         <a
           href="https://chromewebstore.google.com/detail/mutable-web/cnahdmdbhkphpbpbjjbfdnmbphbenglc"
@@ -48,10 +56,9 @@ const MutablePage: FC<MutablePageProps> = () => {
           Get our Extension
         </a>
         <div className={styles.descriptionBlockBottom}>
-        You need to install an extension to watch it.
+          You need to install an extension to watch it.
+        </div>
       </div>
-      </div>
-     
     </div>
   )
 }
