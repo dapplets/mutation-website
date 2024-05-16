@@ -15,7 +15,7 @@ const MutablePage: FC<MutablePageProps> = () => {
     return null
   }
 
-  const [author, mutation, mutationName] = mutationId?.split('/')
+  const [author, , mutationName] = mutationId?.split('/')
 
   return (
     <div className={styles.root}>
