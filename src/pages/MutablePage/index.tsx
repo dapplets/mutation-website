@@ -15,7 +15,7 @@ const MutablePage: FC<MutablePageProps> = () => {
     return null
   }
 
-  const [author, mutation] = mutationId?.split('/')
+  const [author, mutation, mutationName] = mutationId?.split('/')
 
   return (
     <div className={styles.root}>
@@ -35,7 +35,7 @@ const MutablePage: FC<MutablePageProps> = () => {
       <div className={styles.descriptionBlockMedium}>
         <div className={styles.textMutation}>
           {' '}
-          Opening the <span className={styles.variable}>{mutation}</span> mutation of the&nbsp;
+          Opening the <span className={styles.variable}>{mutationName}</span> mutation of the&nbsp;
         </div>
 
         <div className={styles.descriptionBlockTargetUrl}>
